@@ -49,27 +49,33 @@ $(document).ready(function() {
         console.log("failed");
       }
     });  
-  }
+  }  
+
   loadTweets();
 
-  //renderTweets(data);
-
-  $("#submit").submit(function(event) {
-    event.preventDefault();    
-    console.log($(this).find("textarea").serialize());
-    $.ajax({
-      url: "/tweets",
-      dataType: "text",
-      type: "POST",
-      contentType: "application/x-www-form-urlencoded",
-      data: $(this).find("textarea").serialize(),
-      success: function() {
-        console.log("success");
-      },
-      error: function() {
-        console.log("failed");
-      }
-    });   
+  $("#submit").submit(function(event) {    
+    const wordCount = $(this).find("textarea").val().length;
+    if (wordCount === 0) {
+      alert("empty message");
+      event.preventDefault();
+    } else if (wordCount > 140) {
+      alert("message too long");
+      event.preventDefault();
+    } else {
+      $.ajax({
+        url: "/tweets",
+        dataType: "text",
+        type: "POST",
+        contentType: "application/x-www-form-urlencoded",
+        data: $(this).find("textarea").serialize(),
+        success: function() {
+          loadTweets();
+        },
+        error: function() {
+          console.log("failed");
+        }
+      });
+    }       
   });    
   
 });
