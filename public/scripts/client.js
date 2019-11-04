@@ -82,6 +82,23 @@ $(document).ready(function() {
         }
       });
     }       
-  });    
+  });
+  
+  let composeToggle = true;
+  let startToggle = true;
+  $("#compose").on("click", function(event) {
+    if (composeToggle && startToggle){
+      $(".new-tweet").find("textarea").focus();
+      composeToggle = false;
+      startToggle = false;
+    } else if (composeToggle){
+      $(".new-tweet").slideDown();      
+      $(".new-tweet").find("textarea").focus();    
+      composeToggle = false;  
+    } else {
+      $(".new-tweet").slideUp();
+      composeToggle = true;
+    }      
+  });
   
 });
