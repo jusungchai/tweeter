@@ -5,7 +5,7 @@ article {
 }
 
 article.tweet > header {
-  padding: 0 1em 0 1em;
+  padding: 0 1em 1em 1em;
 }
 
 article.tweet > header > p > span {
@@ -36,4 +36,8 @@ article:hover {
 
 article:hover header > p > span {
   visibility: visible;
+}
+
+article.tweet > header > img {
+  float: left;
 }
