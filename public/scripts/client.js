@@ -4,7 +4,6 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
-$(document).ready(function() {
 // Fake data taken from initial-tweets.json
 const data = [
   {
@@ -62,5 +61,6 @@ const renderTweets = function(tweets) {
   }  
 }
 
-renderTweets(data);
+$(document).ready(function() {
+  renderTweets(data);
 });
