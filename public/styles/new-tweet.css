@@ -22,6 +22,7 @@ textarea {
 
 .counter {
   float: right;
+  font-family: 'Bungee', sans-serif;
 }
 
 .changeCounterColor {
