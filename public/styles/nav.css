@@ -11,3 +11,26 @@ nav {
 nav > span {
   font-family: 'Bungee', sans-serif;
 }
+
+nav > div {
+  display: inline;
+}
+
+nav > div > button {
+  background-color: transparent;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  float: right;
+  animation: blinker 2s linear infinite;
+}
+
+nav > div > button:focus {
+  outline: none;
+}
+
+@keyframes blinker {  
+  50% { color: orange; }
+}
