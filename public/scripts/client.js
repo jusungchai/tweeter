@@ -14,10 +14,9 @@ const createTweetElement = function(tweet) {
   const htmlCode = `
   <header>
     <img src="${tweet.user.avatars}">         
-    <p>
-      ${tweet.user.name}
+    <p>${tweet.user.name}
       <span>${tweet.user.handle}</span>
-    </p>                     
+    </p>                        
   </header>
   <p>${escape(tweet.content.text)}</p>
   <footer>
