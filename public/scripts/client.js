@@ -66,7 +66,20 @@ $(document).ready(function() {
 
   $("#submit").submit(function(event) {
     event.preventDefault();    
-    console.log($(this).find("textarea").serialize());   
+    console.log($(this).find("textarea").serialize());
+    $.ajax({
+      url: "/tweets/",
+      dataType: "text",
+      type: "POST",
+      contentType: "application/x-www-form-urlencoded",
+      data: $(this).find("textarea").serialize(),
+      success: function() {
+        console.log("success");
+      },
+      error: function() {
+        console.log("failed");
+      }
+    });   
   });    
   
 });
