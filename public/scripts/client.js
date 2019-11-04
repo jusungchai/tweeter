@@ -63,4 +63,10 @@ const renderTweets = function(tweets) {
 
 $(document).ready(function() {
   renderTweets(data);
+
+  $("#submit").submit(function(event) {
+    event.preventDefault();    
+    console.log($(this).find("textarea").serialize());   
+  });    
+  
 });
