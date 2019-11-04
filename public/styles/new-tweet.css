@@ -28,3 +28,7 @@ textarea {
 .changeCounterColor {
   color: red;
 }
+
+textarea:focus {
+  outline: none;
+}
