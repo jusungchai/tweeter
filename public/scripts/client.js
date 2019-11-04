@@ -30,7 +30,9 @@ const createTweetElement = function(tweet) {
 }
 
 const renderTweets = function(tweets) {
-  for (let tweet of tweets){
+  $("#tweets-container").empty();
+  const tweetsInChronOrder = tweets.reverse();
+  for (let tweet of tweetsInChronOrder){
     $('#tweets-container').append(createTweetElement(tweet));
   }  
 }
