@@ -10,6 +10,7 @@ const escape =  function(str) {
 }
 
 const createTweetElement = function(tweet) {
+  const timeDiff = Math.ceil(((new Date().getTime()) - tweet.created_at)/86400000);
   let $tweet = $('<article>').addClass('tweet');
   const htmlCode = `
   <header>
@@ -20,7 +21,7 @@ const createTweetElement = function(tweet) {
   </header>
   <p>${escape(tweet.content.text)}</p>
   <footer>
-    <p>${tweet.created_at}
+    <p>${timeDiff} days ago
       <span>                
         <i class="fa fa-flag">&#160</i>
         <i class="fa fa-retweet">&#160</i>
