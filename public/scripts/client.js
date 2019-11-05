@@ -52,7 +52,9 @@ $(document).ready(function() {
         renderTweets(tweetDB);
       },
       error: function(){
-        console.log("failed");
+        $("#error").text("Something went wrong");
+        $("#error").slideDown();
+        event.preventDefault();
       }
     });  
   }  
@@ -81,7 +83,9 @@ $(document).ready(function() {
           loadTweets();
         },
         error: function() {
-          console.log("failed");
+          $("#error").text("Something went wrong");
+          $("#error").slideDown();
+          event.preventDefault();
         }
       });
     }       
