@@ -27,6 +27,7 @@ article.tweet > footer {
 
 article.tweet > footer > p > span {
   float: right;
+  visibility: hidden;
 }
 
 article:hover {
@@ -40,6 +41,10 @@ article:hover header > p > span {
 
 article.tweet > header > img {
   float: left;
+}
+
+article:hover footer > p > span {
+  visibility: visible;
 }
 
 /*# sourceMappingURL=tweet-container.css.map */
