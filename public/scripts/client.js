@@ -100,5 +100,19 @@ $(document).ready(function() {
       composeToggle = true;
     }      
   });
+
+  const secondButton = $("#scroll-up");
+  $(window).scroll(function() {
+    if ($(window).scrollTop() > 200) {
+      secondButton.addClass('show');
+    } else {
+      secondButton.removeClass('show');
+    }
+  });
+
+  secondButton.on('click', function(event) {
+    $('html, body').animate({scrollTop:0});
+    $(".new-tweet").find("textarea").focus();
+  });
   
 });
