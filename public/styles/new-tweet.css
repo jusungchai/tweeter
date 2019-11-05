@@ -32,3 +32,9 @@ textarea {
 textarea:focus {
   outline: none;
 }
+
+#error{
+  border: 5px solid #ff0000;
+  text-align: center;
+  padding: 0.5em;
+}

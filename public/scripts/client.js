@@ -56,16 +56,19 @@ $(document).ready(function() {
       }
     });  
   }  
-
+  
+  $("#error").hide();
   loadTweets();
 
   $("#submit").submit(function(event) {    
     const wordCount = $(this).find("textarea").val().length;
     if (wordCount === 0) {
-      alert("empty message");
+      $("#error").text("Empty Tweet Message!");
+      $("#error").slideDown();
       event.preventDefault();
     } else if (wordCount > 140) {
-      alert("message too long");
+      $("#error").text("Text Exeeds 140 Characters!");
+      $("#error").slideDown();
       event.preventDefault();
     } else {
       $.ajax({
