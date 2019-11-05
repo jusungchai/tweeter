@@ -61,6 +61,7 @@ $(document).ready(function() {
   }  
   
   $("#error").hide();
+  $(".new-tweet").hide(); 
   loadTweets();
 
   $("#submit").submit(function(event) {    
@@ -96,21 +97,16 @@ $(document).ready(function() {
     }       
   });
   
-  let composeToggle = true;
-  let startToggle = true;
+  let composeBoxHidden = true;
   $("#compose").on("click", function(event) {
-    if (composeToggle && startToggle){
+    if (composeBoxHidden){
+      $(".new-tweet").slideDown();
       $(".new-tweet").find("textarea").focus();
-      composeToggle = false;
-      startToggle = false;
-    } else if (composeToggle){
-      $(".new-tweet").slideDown();      
-      $(".new-tweet").find("textarea").focus();    
-      composeToggle = false;  
+      composeBoxHidden = false; 
     } else {
-      $(".new-tweet").slideUp();
-      composeToggle = true;
-    }      
+      $(".new-tweet").slideUp();      
+      composeBoxHidden = true; 
+    }        
   });
 
   const secondButton = $("#scroll-up");
