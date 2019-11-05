@@ -1,3 +1,4 @@
+//Function to change counter value and color
 $(document).ready(function() {
   $(".new-tweet textarea").on('keyup', function() {    
     const remainingChar = 140 - $(this).val().length;
