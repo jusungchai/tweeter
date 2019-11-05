@@ -2,6 +2,10 @@ $bg-color: red;
 $color: white;
 $font: 'Bungee', sans-serif;
 
+@mixin vertical-align($property) {
+  bottom: $property;
+}
+
 #scroll-up {
   float: right;
   background-color: $bg-color;
@@ -12,14 +16,14 @@ $font: 'Bungee', sans-serif;
   height: 60px;
   text-align: center;
   border-radius: 50%;
-  position: fixed;
-  bottom: 50px;
+  position: fixed;  
   right: 50px;   
   visibility: hidden;
   z-index: auto;
   cursor: pointer;
   border: none;
   padding: 0;
+  @include vertical-align(50px);
 }
 
 #scroll-up.show {

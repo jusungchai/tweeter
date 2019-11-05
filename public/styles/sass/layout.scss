@@ -15,6 +15,10 @@ $primary-color: #545149;
 $background-color: #f4f1ec;
 $desktop-nav-color: #5a5ab9; 
 
+@mixin vertical-align($property) {
+  padding-top: $property; 
+}
+
 /*
  * Global layout stuff
  */
@@ -62,7 +66,7 @@ body {
   }
 
   .top-header > div > img {
-    padding-top: 1.5em;
+    @include vertical-align(1.5em);
   }
 
   .top-header > div > h2 {
