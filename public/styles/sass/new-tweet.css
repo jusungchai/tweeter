@@ -1,0 +1,42 @@
+input {
+  color: #FFFFFF;
+  font-family: "Bungee", sans-serif;
+  background-color: #5a5ab9;
+  border: none;
+  cursor: pointer;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+textarea {
+  width: 100%;
+  resize: none;
+  border-top-style: none;
+  border-left-style: none;
+  border-right-style: none;
+  border-bottom: 5px solid #4c4b4b;
+  height: 65;
+  font-weight: 700;
+  background-color: transparent;
+}
+
+.counter {
+  float: right;
+  font-family: "Bungee", sans-serif;
+}
+
+.changeCounterColor {
+  color: red;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+#error {
+  border: 5px solid red;
+  text-align: center;
+  padding: 0.5em;
+}
+
+/*# sourceMappingURL=new-tweet.css.map */

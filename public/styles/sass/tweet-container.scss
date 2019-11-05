@@ -1,0 +1,48 @@
+$article-border-color: #4c4b4b;
+$user-id-color: rgb(153, 161, 168);
+$tweet-container-border-color: #4c4b4b;
+$box-shadow-color: rgb(153, 161, 168);
+
+article {
+  border: 5px solid $article-border-color;
+  margin: 1.5em 0 1.5em 0;
+  font-weight: 300;
+}
+
+article.tweet > header {
+  padding: 0 1.5em 1em 1.5em;
+}
+
+article.tweet > header > p > span {
+  float: right;
+  color: $user-id-color;
+  visibility: hidden;
+}
+
+article.tweet > p {
+  border-bottom: 5px solid $tweet-container-border-color;
+  padding: 1em;
+  margin: 0 1em 0 1em;
+}
+
+article.tweet > footer {
+  margin: 0 2em 0 2em;
+  font-size: 16px;
+}
+
+article.tweet > footer > p > span {
+  float: right;
+}
+
+article:hover {
+  font-weight: 400;
+  box-shadow: 5px 10px 8px $box-shadow-color;
+}
+
+article:hover header > p > span {
+  visibility: visible;
+}
+
+article.tweet > header > img {
+  float: left;
+}

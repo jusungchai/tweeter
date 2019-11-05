@@ -1,0 +1,30 @@
+#scroll-up {
+  float: right;
+  background-color: red;
+  color: white;
+  font-family: "Bungee", sans-serif;
+  font-size: 24px;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  visibility: hidden;
+  z-index: auto;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+}
+
+#scroll-up.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+#scroll-up:focus {
+  outline: none;
+}
+
+/*# sourceMappingURL=second-button.css.map */

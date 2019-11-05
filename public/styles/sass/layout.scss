@@ -1,0 +1,72 @@
+/*
+ * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+ * https://css-tricks.com/international-box-sizing-awareness-day/
+ * Do not modify these two selectors, please
+ */
+ html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+$font-stack: 'Source Sans Pro', sans-serif;
+$primary-color: #545149;
+$background-color: #f4f1ec;
+$desktop-nav-color: #5a5ab9; 
+
+/*
+ * Global layout stuff
+ */
+
+body {
+  font-family: $font-stack;
+  color: $primary-color;
+  background-color: $background-color;
+  font-size: 24px;
+}
+
+/*
+ * Additional CSS can be defined below or in other CSS files, as per instructions
+ */
+
+.container {
+  padding-top: 7em;
+  width: 90vw;
+  margin: 0 auto;
+  word-wrap: break-word;
+}
+
+/* Desktop styles */
+@media only screen and (min-width: 1024px) {
+  body > header.top-header {    
+    width: 30vw;
+    float: left;    
+    margin: 3em 1.5em 0 1.5em;       
+  }
+
+  .container {
+    width: 60vw;
+    float: right;    
+    padding-right: 1.5em;
+    padding-top: 150px;    
+  }
+
+  body > nav {    
+    background-color: $desktop-nav-color;  
+    background-image: none;  
+  }
+
+  body > main.container {
+    padding-top: 8em;
+  }
+
+  .top-header > div > img {
+    padding-top: 1.5em;
+  }
+
+  .top-header > div > h2 {
+    margin-top: 0;
+  }
+
+}

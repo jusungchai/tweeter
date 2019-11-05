@@ -1,0 +1,49 @@
+$input-color: #FFFFFF;
+$input-font: 'Bungee', sans-serif;
+$input-bg-color: #5a5ab9;
+$textarea-border-color: #4c4b4b;
+$textarea-bg-color: transparent;
+$counter-font: 'Bungee', sans-serif;
+$counter-change-color: red;
+$error-color: red;
+
+input {
+  color: $input-color;
+  font-family: $input-font;
+  background-color: $input-bg-color;
+  border: none;
+  cursor: pointer;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+textarea {
+  width: 100%;
+  resize: none;
+  border-top-style: none;
+  border-left-style: none;
+  border-right-style: none;
+  border-bottom: 5px solid $textarea-border-color;
+  height: 65;
+  font-weight: 700;
+  background-color: $textarea-bg-color;
+}
+
+.counter {
+  float: right;
+  font-family: $counter-font;
+}
+
+.changeCounterColor {
+  color: $counter-change-color
+}
+
+textarea:focus {
+  outline: none;
+}
+
+#error{
+  border: 5px solid $error-color;
+  text-align: center;
+  padding: 0.5em;
+}

@@ -1,0 +1,11 @@
+$background-color: #d98900;
+
+header.top-header{
+  height: 400px;
+  width: 100%;  
+  position: relative;
+  top: 120px;
+  text-align: center;
+  background-color: $background-color;
+  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png"); 
+}

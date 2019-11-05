@@ -1,0 +1,44 @@
+$nav-bg-color: #d98900;
+$nav-color: #FFFFFF;
+$nav-span-font: 'Bungee', sans-serif;
+$nav-btn-color: white;
+$nav-btn-bg-color: transparent;
+$blinker-color: #d98900;
+
+nav {
+  position: fixed;
+  height: 120px;
+  width: 100vw;
+  z-index: 1;
+  background-color: $nav-bg-color;
+  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png"); 
+  color: $nav-color;
+  padding: 1.5em;
+}
+
+nav > span {
+  font-family: $nav-span-font;
+}
+
+nav > div {
+  display: inline;
+}
+
+nav > div > button {
+  background-color: $nav-btn-bg-color;
+  color: $nav-btn-color;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  float: right;
+  animation: blinker 2s linear infinite;
+}
+
+nav > div > button:focus {
+  outline: none;
+}
+
+@keyframes blinker {  
+  50% { color: $blinker-color; }
+}

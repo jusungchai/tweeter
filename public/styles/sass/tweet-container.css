@@ -1,0 +1,45 @@
+article {
+  border: 5px solid #4c4b4b;
+  margin: 1.5em 0 1.5em 0;
+  font-weight: 300;
+}
+
+article.tweet > header {
+  padding: 0 1.5em 1em 1.5em;
+}
+
+article.tweet > header > p > span {
+  float: right;
+  color: #99a1a8;
+  visibility: hidden;
+}
+
+article.tweet > p {
+  border-bottom: 5px solid #4c4b4b;
+  padding: 1em;
+  margin: 0 1em 0 1em;
+}
+
+article.tweet > footer {
+  margin: 0 2em 0 2em;
+  font-size: 16px;
+}
+
+article.tweet > footer > p > span {
+  float: right;
+}
+
+article:hover {
+  font-weight: 400;
+  box-shadow: 5px 10px 8px #99a1a8;
+}
+
+article:hover header > p > span {
+  visibility: visible;
+}
+
+article.tweet > header > img {
+  float: left;
+}
+
+/*# sourceMappingURL=tweet-container.css.map */
