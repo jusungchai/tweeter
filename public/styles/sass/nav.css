@@ -8,16 +8,13 @@ nav {
   color: #FFFFFF;
   padding: 1.5em;
 }
-
-nav > span {
+nav span {
   font-family: "Bungee", sans-serif;
 }
-
-nav > div {
+nav div {
   display: inline;
 }
-
-nav > div > button {
+nav div button {
   background-color: transparent;
   color: white;
   font-weight: 700;
@@ -27,8 +24,7 @@ nav > div > button {
   float: right;
   animation: blinker 2s linear infinite;
 }
-
-nav > div > button:focus {
+nav div button:focus {
   outline: none;
 }
 

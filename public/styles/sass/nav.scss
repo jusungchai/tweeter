@@ -14,29 +14,29 @@ nav {
   background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png"); 
   color: $nav-color;
   padding: 1.5em;
-}
 
-nav > span {
-  font-family: $nav-span-font;
-}
+  span {
+    font-family: $nav-span-font;
+  }
 
-nav > div {
-  display: inline;
-}
+  div {
+    display: inline;
 
-nav > div > button {
-  background-color: $nav-btn-bg-color;
-  color: $nav-btn-color;
-  font-weight: 700;
-  cursor: pointer;
-  border: none;
-  padding: 0;
-  float: right;
-  animation: blinker 2s linear infinite;
-}
+    button {
+      background-color: $nav-btn-bg-color;
+      color: $nav-btn-color;
+      font-weight: 700;
+      cursor: pointer;
+      border: none;
+      padding: 0;
+      float: right;
+      animation: blinker 2s linear infinite;
+    }
 
-nav > div > button:focus {
-  outline: none;
+    button:focus {
+      outline: none;
+    }
+  }
 }
 
 @keyframes blinker {  
