@@ -25,9 +25,43 @@ body {
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
 
- main {
-   padding-top: 7em;
-   width: 90vw;
-   margin: 0 auto;
-   word-wrap: break-word;
- }
+.container {
+  padding-top: 7em;
+  width: 90vw;
+  margin: 0 auto;
+  word-wrap: break-word;
+}
+
+/* Desktop styles */
+@media only screen and (min-width: 1024px) {
+  body > header.top-header {    
+    width: 30vw;
+    float: left;    
+    margin: 3em 1.5em 0 1.5em;       
+  }
+
+  .container {
+    width: 60vw;
+    float: right;    
+    padding-right: 1.5em;
+    padding-top: 150px;    
+  }
+
+  body > nav {    
+    background-color: #5a5ab9;  
+    background-image: none;  
+  }
+
+  body > main.container {
+    padding-top: 8em;
+  }
+
+  .top-header > div > img {
+    padding-top: 1.5em;
+  }
+
+  .top-header > div > h2 {
+    margin-top: 0;
+  }
+
+}

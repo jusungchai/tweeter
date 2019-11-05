@@ -3,7 +3,8 @@ nav {
   height: 120px;
   width: 100vw;
   z-index: 1;
-  background-color: #4056A1;
+  background-color: #d98900;
+  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png"); 
   color: #FFFFFF;
   padding: 1.5em;
 }
@@ -32,5 +33,5 @@ nav > div > button:focus {
 }
 
 @keyframes blinker {  
-  50% { color: orange; }
+  50% { color: #d98900; }
 }
