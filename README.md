@@ -9,7 +9,20 @@ Upon success, client will get the values back from the tweet database in the ser
 This application supports both tablet and windows view based on screen resolution.
 
 ## Final Product
-!["screenshot of urls page"](https://github.com/jusungchai/tinyapp/blob/master/docs/urls-page.png)
+
+!["screenshot of desktop view on load"](https://github.com/jusungchai/tweeter/blob/master/screenshots/initial-desktop-view.png)
+
+!["screenshot of desktop view new tweet container"](https://github.com/jusungchai/tweeter/blob/master/screenshots/desktop-view-new-tweet.png.png)
+
+!["screenshot of desktop view new tweet on success"](https://github.com/jusungchai/tweeter/blob/master/screenshots/desktop-new-tweet-success.png)
+
+!["screenshot of desktop view error message"](https://github.com/jusungchai/tweeter/blob/master/screenshots/desktop-new-tweet-error.png)
+
+!["screenshot of tablet view on load"](https://github.com/jusungchai/tweeter/blob/master/screenshots/initial-tablet-view.png)
+
+!["screenshot of tablet view new tweet and tweet container"](https://github.com/jusungchai/tweeter/blob/master/screenshots/tablet-view-new-tweet.png)
+
+!["screenshot of tablet view error message"](https://github.com/jusungchai/tweeter/blob/master/screenshots/tablet-new-tweet-error.png)
 
 ## Getting Started
 
